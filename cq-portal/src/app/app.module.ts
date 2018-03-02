@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 
 import {HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
+import { QuestionsComponent } from './questions/questions.component';
 //  "/people/search/all" --get all people
 // "/people/search/lastname"
 
@@ -18,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     ConsultantsEntryComponent,
+    QuestionsComponent,
   ],
   imports: [
     BrowserModule,
