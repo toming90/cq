@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {ConsultantsEntryComponent} from './consultants-entry/consultants-entry.component';
 
-import { HighlightModule }    from './highlight/highlight.module';
+import { HighlightModule } from './highlight/highlight.module';
 import { FormsModule } from '@angular/forms';
 
 
@@ -18,7 +17,6 @@ import { QuestionsComponent } from './questions/questions.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ConsultantsEntryComponent,
     QuestionsComponent,
   ],
   imports: [
