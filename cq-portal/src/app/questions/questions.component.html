@@ -1,4 +1,4 @@
-<div *ngFor="let q of questions" class="ui form" xmlns="">
+<div *ngFor="let q of questions | async" class="ui form" xmlns="">
   <div class="grouped fields">
     <label>{{q.question}}</label>
     <div class="field">
