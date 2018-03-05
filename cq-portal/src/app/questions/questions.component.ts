@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../../shared/question';
 import { QuestionsService } from './questions-service';
+import {Observable} from 'rxjs/Observable';
 declare var $: any;
 @Component({
   selector: 'app-questions',
@@ -9,7 +10,7 @@ declare var $: any;
   providers: [QuestionsService]
 })
 export class QuestionsComponent implements OnInit {
-  questions: Question[] = [];
+  questions: Observable<Question[]>;
   constructor( private questionsService: QuestionsService) { }
 
   ngOnInit() {
